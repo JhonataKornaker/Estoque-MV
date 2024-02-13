@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid;
+    margin: 16px;
+    width: 100%;
+}
+.container th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+.container tr:hover {
+    background-color: rgb(167, 157, 225);
+}
