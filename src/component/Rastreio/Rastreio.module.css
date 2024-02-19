@@ -3,10 +3,13 @@
     margin-bottom: 60px;
 }
 .table {
-    border: 1px solid;
+    
     width: calc(100% - 32px);
     margin: 16px;
     position: relative;
+    background-color: #ffffff; /* Cor branca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 .container th, td {
     border-bottom: 1px solid #ddd;
@@ -14,7 +17,7 @@
     text-align: center;
 }
 .container tr:hover {
-    background-color: rgb(167, 157, 225);
+    background-color: #eaeaead3;
 }
 .container h2 {
     position: absolute;

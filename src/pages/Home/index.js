@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import Calibracao from '../../component/Calibracao';
 import Cards from '../../component/Cards';
-import Header from '../../component/Header';
 import Rastreio from '../../component/Rastreio';
+import Titulo from '../../component/Titulo';
 import styles from './Home.module.css';
+import Obras from '../Obras';
 
 function Home () {
 
@@ -31,21 +33,28 @@ function Home () {
             letra: 'G',
             sm: 'Cristiano',
         },
+        {
+            id: 5,
+            obra: 'Araçoiaba da Serra',
+            letra: 'AS',
+            sm: 'Kayo',
+        },
     ]
 
     return (
         <>
-        <Header/>
         <Calibracao/>
         <Rastreio />
-        <h2 style={{textAlign: 'center', marginBottom: 16}}>
+        <Titulo>
             Obras Ativas
-        </h2>
+        </Titulo>
+        <Link to="/Obras">
         <section className={styles.container}>
         {dados.map((item) => 
             <Cards {...item} key={item.id} />
         )}
         </section>
+        </Link>
         </>
     )
 };

@@ -9,7 +9,7 @@ function Calibracao() {
             fabricante: 'Minipa',
             modelo: 'MI2705',
             serial: '111111',
-            data: '00/00/00',
+            data: '10/02/24',
             localizacao: 'Aparecida III'
         },
         {
@@ -18,7 +18,7 @@ function Calibracao() {
             fabricante: 'Hioki',
             modelo: 'CM4505',
             serial: '222222',
-            data: '00/00/00',
+            data: '15/02/24',
             localizacao: 'Guara'
         }
     ]
