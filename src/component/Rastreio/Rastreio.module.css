@@ -18,6 +18,7 @@
 }
 .container tr:hover {
     background-color: #eaeaead3;
+    cursor: pointer;
 }
 .container h2 {
     position: absolute;

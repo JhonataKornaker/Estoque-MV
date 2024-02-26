@@ -4,9 +4,9 @@ import Cards from '../../component/Cards';
 import Rastreio from '../../component/Rastreio';
 import Titulo from '../../component/Titulo';
 import styles from './Home.module.css';
-import Obras from '../Obras';
 
-function Home () {
+
+function Home() {
 
     const dados = [
         {
@@ -43,18 +43,18 @@ function Home () {
 
     return (
         <>
-        <Calibracao/>
-        <Rastreio />
-        <Titulo>
-            Obras Ativas
-        </Titulo>
-        <Link to="/Obras">
-        <section className={styles.container}>
-        {dados.map((item) => 
-            <Cards {...item} key={item.id} />
-        )}
-        </section>
-        </Link>
+            <Calibracao />
+            <Rastreio />
+            <Titulo>
+                Obras Ativas
+            </Titulo>
+            <Link className={styles.link_cards} to="/Obras">
+                <section className={styles.container}>
+                    {dados.map((item) =>
+                        <Cards {...item} key={item.id} />
+                    )}
+                </section>
+            </Link>
         </>
     )
 };

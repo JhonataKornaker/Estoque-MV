@@ -10,8 +10,8 @@ function AppRouter() {
         <BrowserRouter>
         <Header />
             <Routes>
-                <Route path="/" component={Home} />
-                <Route path="/obras" component={Obras} />
+                <Route path="/" element={<Home/>} />
+                <Route path="/obras" element={<Obras/>} />
             </Routes>
             <Rodape/>
         </BrowserRouter>
